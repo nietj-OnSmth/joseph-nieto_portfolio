@@ -92,7 +92,7 @@ I didn't include my resume since my background and skills are already on the pag
 - Email: jniet7115@gmail.com
 
 ## Visual Design
-I used includes clear headings, consistent spacing, bordered cards, dark blue headings, and teal buttons to keep the page simple and easy to follow.
+I used clear headings, consistent spacing, bordered cards, dark blue headings, and teal buttons to keep the page simple and easy to follow.
 
 ## Color Scheme
 These were the color schemes that were used
