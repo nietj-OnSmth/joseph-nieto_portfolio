@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+<!-- My name and a navigation section that is able to let users jump to the main content -->
     <a class="skip-link" href="#main">Skip to content</a>
     <header>
         <div class="container header-row">
@@ -20,102 +22,146 @@
         </div>
     </header>
 
-    <main id="main">
+<!-- An introduction and my profile picture -->
+    <main id="main" tabindex="-1">
         <section class="hero" id="home">
             <div class="container hero-row">
                 <div class="hero-text">
                    <p class = "label">CPIS student at Farmingdale State College </p>
                     <h1>Sup, I'm Joseph</h1>
-                    <p class = "intro"> I enjoy solving and doing SQL code and amazing system design.</p>
+                    <p class = "intro"> I enjoy solving problems with SQL, designing databases, and planning useful systems.</p>
                     <a class="button" href="#projects">See my projects </a>
                 </div>
-                <!-- Replace this box with a photo if you want to add one. -->
                 <div class="photo">
                     <img src="images/Joseph_profile.png" alt="Joseph Nieto sitting with a dog">
                 </div>
             </div>
         </section>
 
+<!-- A section more about me, my experience, and my personal goals -->
         <section class="section" id="about">
             <div class="container">
             <h2>About me</h2>
-            <p>I'm a Computer Programming and Information Systems student at Farmingdale State College. I like turning complicated ideas into clear, useful solutions through coding, database design, and systems planning.</p>
-            <p>I'm working toward my bachelor's degree, with expected graduation in May 2027. I'm seeking an internship or entry-level technology role where I can learn and contribute to a team.</p>
+            <p>
+                I'm a Computer Programming and Information Systems student at Farmingdale State College, with an expected graduation date of May 2027. I enjoy solving problems, learning how things work, and applying what I learn in my work to my projects and helping others in need.
+            </p>
+            <p>
+                My interests include SQL, database design, and systems planning. Through coursework and team projects, I've developed my technical and teamwork skills and earned Dean's List recognition. I also work as an AV technician, operating audio equipment, presentation slides, and livestream cameras.
+            </p>
+            <p>
+                I value teamwork and enjoy helping others solve problems. I'm looking for an internship or entry-level technology role where I can contribute, gain more experience, and continue to grow in what my path has ahead of me.
+            </p>
             </div>
         </section>
 
+<!-- Skills I have practiced in my years of college and when it comes to my work -->
         <section class="section light" id="skills">
          <div class="container">
             <h2>Skills</h2>
+             <p>
+                 Skills I use when it comes to developing my coursework, projects, and work experience
+             </p>
             <div class = "card-row">
                 <div class = "card">
-                    <h3>Web</h3>
-                    <p>HTML, CSS, and beginner JavaScript</p>
+                    <h3>Web Development </h3>
+                    <p>
+                        HTML, CSS, and beginner JavaScript are what I used when it comes to the layout of this website
+                    </p>
                 </div>
             <div class = "card">
                 <h3>Programming</h3>
-                <p>Java and Python</p>
+                <p>
+                    Java and Python fundamentals are what I practiced through my coursework
+                </p>
             </div>
             <div class = "card">
-                <h3>Data</h3>
-                <p>MySQL, SQL, SQL Server, and Database Design</p>
+                <h3>SQL and Databases</h3>
+                <p>
+                    Creating tables in MySQL and SQL Server and practicing INSERT, UPDATE, and DELETE queries
+                </p>
             </div>
             <div class = "card">
-                <h3>People</h3>
-                <p>Communication, teamwork, and problem solving</p>
+                <h3>Database and System Design</h3>
+                <p>
+                    Through my coursework, I practiced creating ERD diagrams, primary and foreign keys and designing strong table relationships
+                </p>
             </div>
-          </div>
+             <div class = "card">
+                 <h3>Technical Support</h3>
+                 <p>
+                     Operating audio equipment, managing presentation slides and livestream cameras, and even troubleshooting audio and video issues.
+                 </p>
+             </div>
+             <div class = "card">
+                 <h3>Professional Skills</h3>
+                 <p>
+                     Communication, teamwork, leadership, attention to detail, organization, and problem-solving
+                 </p>
+             </div>
+            </div>
          </div>
         </section>
 
+        <!-- Projects that I have been learning and creating over the years -->
         <section class="section" id="projects">
             <div class="container">
                 <h2>Projects</h2>
-                <p>These are class projects that i've built over the years. Each description says the goal and what I have planned to build</p>
-
-                <div class = "filters" aria-label="Filters projects">
-                    <button type = "button" onclick="filterProjects('all')">All</button>
-                    <button type = "button" onclick="filterProjects('web')">Web</button>
-                    <button type = "button" onclick="filterProjects('data')">Data</button>
-                    <button type = "button" onclick = "filterProjects('systems')">Systems</button>
+                <p>
+                    These are projects that I've built over the years. Each description says the goal and what I have planned to build and what I have practiced along the way.
+                </p>
+                <div class = "filters" role="group" aria-label="Filters projects">
+                    <button class = "filter-button" type="button" data-filter="all" aria-pressed="true" onclick="filterProjects('all')">All</button>
+                    <button class = "filter-button" type="button" data-filter="web" aria-pressed="false" onclick="filterProjects('web')">Web</button>
+                    <button class = "filter-button" type="button" data-filter="data" aria-pressed="false" onclick="filterProjects('data')">Data</button>
+                    <button class = "filter-button" type="button" data-filter="systems" aria-pressed="false" onclick="filterProjects('systems')">Systems</button>
                 </div>
 
-                <p id = "filter-message" role = "status">Showing all projects</p>
-
+                <p id = "filter-message" role = "status">Showing all 4 projects</p>
                 <div class = "card-row">
                     <article class = "card project" data-type = "systems">
                         <h3>Academic Planning Support System</h3>
                         <img
                          src = "images/Ai-Academic-Planning-System.png"
                          alt = "Academic Planning System mockup demonstrates the login, student information, course recommendations, alerts, and schedules">
-                        <p>Worked with a team to plan an academic advising concept, including course planning, user stories, and project risks</p>
+                        <p>
+                            Worked with a team to plan an academic advising concept, including course planning, user stories, and project risks
+                        </p>
                         <p class="tag"> System analysis Team capstone </p>
                     </article>
 
                     <article class = "card project" data-type = "data">
-                        <h3>Music Subscription Database</h3>
+                        <h3>AnimeTrack Subscription Database</h3>
                         <img
                         src = "images/Music-Subscription.png"
                         alt = "AniTrack main menu with options to list, add, and search members">
-                        <p>Designed an ER diagram for users, songs, artists, playlists, and subscriptions, and practiced turning relationships into SQL tables.</p>
-                        <p class = "tag"> Database design * Coursework</p>
+                        <p>
+                            Worked on an AnimeTrack subscription database project for organizing member information. The project includes a menu with options to list members, add new members, and search for existing members.
+                        </p>
+                        <p class = "tag"> Database design and Coursework</p>
                     </article>
 
-                    <article class = "card project" data-type = "data systems">
+                    <article class = "card project" data-type = "data">
                         <h3>Spotify SQL Database</h3>
-                        <p>Built a database inspired by Spotify using SQL. Created tables to store artist and user information, allowing new artists and users to be added to the database</p>
-                        <p class = "tag"> SQL * Database design </p>
+                        <p>
+                            Built a database inspired by Spotify using SQL. Created tables to store artist and user information, allowing new artists and users to be added to the database
+                        </p>
+                        <p class = "tag"> SQL plus Database design </p>
                     </article>
 
                     <article class = "card project" data-type = "web">
                         <h3>Personal Portfolio Website</h3>
-                        <p>Built this page with the help of HTML, CSS, and JavaScript so I can introduce my work and let vistors find relevant project.</p>
-                        <p class = "tag"> Website development * This amazing project</p>
+                        <p>
+                            Built this page with the help of HTML, CSS, and JavaScript, so I can introduce my work and let visitors find relevant projects.
+                        </p>
+                        <p class = "tag">
+                            Website development which is this amazing project
+                        </p>
                     </article>
                 </div>
             </div>
         </section>
 
+        <!-- I created an email draft section for when visitors want to have easy access in sending and getting in contact of me -->
         <section class="section light" id="contact">
             <div class="container">
 
@@ -124,21 +170,23 @@
                     <h2>Contact me</h2>
 
                     <div class="social-links">
-                        <a class="button" href="https://github.com/nietj-OnSmth">
+                        <a class="button" href="https://github.com/nietj-OnSmth" target="_blank" rel="noopener noreferrer">
                             GitHub
                         </a>
 
-                        <a class="button" href="https://www.linkedin.com/in/joseph-nieto-b2992826b/?isSelfProfile=true">
+                        <a class="button" href="https://www.linkedin.com/in/joseph-nieto-b2992826b/?isSelfProfile=true" target="_blank">
                             LinkedIn
                         </a>
 
-                        <a class="button" href="https://www.instagram.com/the_real_jj39/">
+                        <a class="button" href="https://www.instagram.com/the_real_jj39/" target="_blank">
                             Instagram
                         </a>
                     </div>
                 </div>
 
-                <p>Fill out the form to open a draft in your email app. You can review it before sending.</p>
+                <p>If there is any issues with the form, you can also email me at
+                    <a href="mailto:jniet7115@gmail.com">jniet7115@gmail.com</a>
+                </p>
 
                 <form onsubmit="sendEmail(event)">
                     <label for="name">Your name</label>
